@@ -25,4 +25,7 @@ public interface StockExchange {
      * Returns dollar value of trading activity
      */
     BigDecimal getTradingCosts();
+    
+    
+    BigDecimal getTotalIncome();
 }

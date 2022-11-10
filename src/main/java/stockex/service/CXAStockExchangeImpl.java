@@ -5,9 +5,13 @@ import java.util.Map;
 
 import stockex.exceptions.InsufficientUnitsException;
 import stockex.exceptions.InvalidCodeException;
+import stockex.persistence.dal.StockDAO;
 
-public class CXAStockExchangeImpl implements StockExchange {
+public class CXAStockExchangeImpl extends BaseStockExchange{
 
+	private final StockDAO stockDAO;
+	private BigDecimal totalIncome;
+	
 	@Override
 	public void buy(String code, Integer units) throws InsufficientUnitsException, InvalidCodeException {
 		// TODO Auto-generated method stub
@@ -18,12 +22,6 @@ public class CXAStockExchangeImpl implements StockExchange {
 	public void sell(String code, Integer units) throws InvalidCodeException {
 		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public Map<String, Integer> getOrderBookTotalVolume() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
