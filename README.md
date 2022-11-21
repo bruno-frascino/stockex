@@ -1,1 +1,1 @@
-### Welcome to Stock Exchange Test Assignment
+### Stock Exchange Exercise
